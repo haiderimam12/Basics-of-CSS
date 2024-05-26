@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cont {
+        height: 600px;
+        width: 100%;
+        border: 3px solid black;
+        display: flex;
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-wrap: nowrap; */
+
+        /* flex-flow: row-reverse wrap; */
+        justify-content: center;
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+
+        align-items: center;
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+        /* align-items: stretch; */
+      }
+
+      .item {
+        background-color: tomato;
+        border: 3px solid rgb(0, 0, 0);
+        margin: 10px;
+        padding: 3px;
+        width: 180px;
+        height: 250px;
+      }
+
+      #item-1{
+        order: 2;
+        /* flex-grow: 1; */
+      }
+      #item-2{
+        order: 3;
+        /* flex-grow: 3; */
+        /* flex-basis: 200px; */
+      }
+      #item-3{
+        order: 5;
+        align-self: flex-end;
+        /* align-self: flex-start; */
+        /* align-self: center; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="item" id="item-1">First Box</div>
+      <div class="item" id="item-2">Second Box</div>
+      <div class="item" id="item-3">Third Box</div>
+    </div>
+  </body>
+</html>

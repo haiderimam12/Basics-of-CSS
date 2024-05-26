@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #box{
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 1px 1px 10px black;
+            background: linear-gradient(rgb(237, 38, 38), rgb(224, 44, 167));
+            /* transition-property: background-color; */
+            transition-duration: 5s;
+            transition-timing-function: ease-in;
+            /* transition-timing-function: ease-in-out; */
+            /* transition-timing-function: ease-out; */
+            /* transition-delay: 2s; */
+            
+        }
+
+        #box:hover{
+            background: linear-gradient(rgb(237, 38, 38), rgb(224, 44, 167));
+            border-radius: 100px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div id="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>

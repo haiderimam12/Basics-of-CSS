@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        :root{
+            --maxw: 500px;
+            --danger-color: crimson;
+            --box-color: rgb(132, 194, 10);
+        }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: var(--box-color);
+        border: 3px solid goldenrod;
+        margin: 2px 9px;
+        box-shadow: 3px 3px 3px var(--box-color);
+      }
+
+      .cont{
+        max-width: var(--maxw);
+        background-color: var(--danger-color);
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="box">box-1</div>
+      <div class="box">box-2</div>
+      <div class="box">box-3</div>
+    </div>
+  </body>
+</html>
